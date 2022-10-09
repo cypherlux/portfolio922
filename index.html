@@ -5,25 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Portfolio</title>
-</head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/green_favicon_io copy/apple-touch-icon.png" type="image/x-icon">
+
+ </head>
 <body>
-    <main>
-        <header>
-            <h1>Hello! My name is Jordan.<br>
-            I am a web developer.</h1>
-            <a href="#about">Find out more.</a>
+ 
+        <header class="neutral-theme">
+            <h1>Hello! My name is Jordan.<br />I'm a developer.</h1>
+            <a href="#about" class="header-link button">Find out more</a>
         </header>
 
         <main>
-            <section id="about me">
-                <h2>About me</h2>
+            <section class="about primary-theme" id="about">
+                <h2>// About me //</h2>
+                <div class="about-container">
+                    <img src="./images/GreenHeart.jpg" class="about-img" alt="photo of a green and black leaf shaped like a heart">
+                    <div class="about-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                        <p>
+                            Autem veniam esse quaerat obcaecati quos nisi aliquid nulla, ratione perferendis, alias aliquam impedit laudantium praesentium quibusdam qui, facilis a distinctio voluptas.
+                        </p>
+                        <p>
+                            Nihil iusto mollitia libero magni facere recusandae, beatae impedit suscipit similique eos ea dolorem quae aut consectetur alias ullam a et vero.
+                        </p>
+                        <a href="#" class="button">My resume.</a>
+                    </div>
+                </div>
+
+                <blockquote>
+                    "Yay, Jordan!"
+                    <cite> -everyone</cite>
+                </blockquote>
+
             </section>
+
+            <section class="neutral-theme">
+                <h2>// Projects //</h2>
+
+                <article>
+                    <div class="article-title">
+                        <h3>Magic 8 Ball</h3>
+                        <p>Have a deep burning question you need answered? Try your luck with the Magic 8 Ball!</p>
+                        <a href="https://cypherlux.github.io/magic8ball/" class="button">Live</a>
+                        <a href="https://github.com/cypherlux/magic8ball" class="button">Code</a>
+                    </div>
+                        <img src="/FrontEndFoxes/portfolio922/images/stylized8ball.jpeg" class="article-img" alt="image of a magic 8 ball">
+                </article>
+
+                <article>
+                    <div class="article-title">
+                        <h3>Terrarium</h3>                 
+                        <p>An adorable virtual terrarium that you can place your own succulants, plants, and cacti in.</p>
+                        <a href="https://cypherlux.github.io/terrarium/" class="button">Live</a>
+                        <a href="https://github.com/cypherlux/terrarium" class="button">Code</a>
+                    </div> 
+                     <img src="/FrontEndFoxes/portfolio922/images/terrarium.png" class="article-img" alt="screenshot of succulent and plant terrarium project">
+                </article>
+
+            </section>
+
+            <section class="contact primary-theme">
+                <h2>// Contact //</h2>
+                <p>If you'd like to work with me, you can drop me a message!</p>
+                <a href="mailto:email@example.com" class="button">Email me</a>
+            </section>
+
         </main>
 
         <section></section>
 
-        <footer></footer>
+
     </main>
+
+    <footer>
+        <ul class="social">
+            <li class="social-item">
+                <a href="https://github.com/cypherlux" class="social-link github">GitHub</a>
+            </li>
+            <li class="social-item">
+                <a href="https://www.linkedin.com/in/jordan-p-04086518b/" class="social-link linkedin">LinkedIn</a>
+            </li>
+        </ul>
+        <p>&copy; 2022 &#127769;</p>
+    </footer>
 
 </body>
 </html>
