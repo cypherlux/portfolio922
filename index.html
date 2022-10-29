@@ -7,11 +7,11 @@
     <title>Front End Portfolio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
 
     <link rel="icon" href="./images/green_favicon_io copy/apple-touch-icon.png" type="image/x-icon">
@@ -20,8 +20,16 @@
 <body>
  
         <header class="neutral-theme">
-            <h1>Hello! My name is Jordan.<br />I'm a developer.</h1>
-            <a href="#about" class="header-link button">Find out more</a>
+            <div class="container">
+                <h1>Hello! My name is Jordan.
+                    <br />
+                    I'm a <span
+                           class="txt-rotate"
+                           data-period="2000"
+                           data-rotate='[ "developer", "writer", "yogi"]'></span>
+                </h1>
+            </div>
+            <a href="#about" class="header-link button">Find out more </a>
         </header>
 
         <main>
@@ -31,29 +39,29 @@
                     <img src="./images/GreenHeart.jpg" class="about-img" alt="photo of a green and black leaf shaped like a heart">
                     <div class="about-text">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            I currently split my time working as a web developer for a digital marketing company and as an editorial writer for an e-zine focusing on news in the meditation industry.
                         </p>
                         <p>
-                            Autem veniam esse quaerat obcaecati quos nisi aliquid nulla, ratione perferendis, alias aliquam impedit laudantium praesentium quibusdam qui, facilis a distinctio voluptas.
+                            In the past, I’ve worked as an aerial silks instructor, stage manager, yoga teacher, Uber driver, environmental educator, soccer ref, and mushroom researcher.
                         </p>
                         <p>
-                            Nihil iusto mollitia libero magni facere recusandae, beatae impedit suscipit similique eos ea dolorem quae aut consectetur alias ullam a et vero.
+                            When I’m not in front of a computer, you can find me training my Belgian Malinois, being outside in areas  without cell service, and philosophizing about life.
                         </p>
-                        <a href="#" class="button">My resume.</a>
+                        <a href="#projects" class="button">My resume.</a>
                     </div>
                 </div>
 
-                <blockquote>
+                <!-- <blockquote>
                     "Yay, Jordan!"
                     <cite> -everyone</cite>
-                </blockquote>
+                </blockquote> -->
 
             </section>
 
-            <section class="neutral-theme">
+            <section class="neutral-theme" id="projects">
                 <h2>// Projects //</h2>
 
-                <article>
+                <article class="card">
                     <div class="article-title">
                         <h3>Magic 8 Ball</h3>
                         <p>Have a deep burning question you need answered? Try your luck with the Magic 8 Ball!</p>
@@ -63,7 +71,7 @@
                         <img src="./images/stylized8ball.jpeg" class="article-img" alt="image of a magic 8 ball">
                 </article>
 
-                <article>
+                <article class="card">
                     <div class="article-title">
                         <h3>Terrarium</h3>                 
                         <p>An adorable virtual terrarium that you can place your own succulants, plants, and cacti in.</p>
@@ -73,20 +81,37 @@
                      <img src="./images/terrarium.png" class="article-img" alt="screenshot of succulent and plant terrarium project">
                 </article>
 
+                <article class="card">
+                    <div class="article-title">
+                        <h3>Typing Game</h3>                 
+                        <p>Feeling like crap? Type out some positive hardstyle lyrics!</p>
+                        <a href="https://cypherlux.github.io/typing-game/" class="button">Live</a>
+                        <a href="https://github.com/cypherlux/typing-game" class="button">Code</a>
+                    </div> 
+                     <img src="./images/typinggame.png" class="article-img" alt="screenshot of typing game">
+                </article>
+
+                <article class="card">
+                    <div class="article-title">
+                        <h3>Memory Gem Game</h3>                 
+                        <p>Sharpen your memory by seeing how quickly you can find 8 pairs of gemstones!</p>
+                        <a href="https://cypherlux.github.io/typing-game/" class="button">Live</a>
+                        <a href="https://github.com/cypherlux/memory-card-game" class="button">Code</a>
+                    </div> 
+                     <img src="./images/gemstonegame.png" class="article-img" alt="screenshot of gemstone matching game">
+                </article>
+
             </section>
 
             <section class="contact primary-theme">
                 <h2>// Contact //</h2>
-                <p>If you'd like to work with me, you can drop me a message!</p>
-                <a href="mailto:email@example.com" class="button">Email me</a>
+                <p>If you'd like to work with me, you can message me via my two profiles below.</p> 
+                <p>&#128071;&#127996;
+                </p>
             </section>
 
         </main>
 
-        <section></section>
-
-
-    </main>
 
     <footer>
         <ul class="social">
