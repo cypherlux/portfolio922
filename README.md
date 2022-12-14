@@ -1,1 +1,1 @@
-Hello! This is my current portfolio that I built as a student in the Front End Foxes Bootcamp
+Hello! This is a portfolio that I built to feature the projects I completed as a student in the Front End Foxes Coding Bootcamp
